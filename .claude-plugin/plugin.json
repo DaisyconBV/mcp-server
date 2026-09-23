@@ -1,0 +1,13 @@
+{
+    "name": "daisycon-mcp",
+    "displayName": "Daisycon MCP",
+    "description": "Search Daisycon affiliate programs, manage campaigns and leads, and track earnings and statistics.",
+    "version": "1.0.1",
+    "author": {
+        "name": "Daisycon B.V."
+    },
+    "homepage": "https://mcp.daisycon.com",
+    "repository": "https://github.com/DaisyconBV/mcp-server",
+    "license": "MIT",
+    "mcpServers": "./.mcp.json"
+}

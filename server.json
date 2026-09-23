@@ -1,0 +1,44 @@
+{
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "com.daisycon.mcp/daisycon",
+    "title": "Daisycon (MCP server)",
+    "description": "Search Daisycon affiliate programs, manage campaigns and leads, and track earnings and statistics.",
+    "version": "1.0.1",
+    "websiteUrl": "https://mcp.daisycon.com",
+    "remotes": [
+        {
+            "type": "streamable-http",
+            "url": "https://mcp.daisycon.com/advertiser/mcp"
+        },
+        {
+            "type": "streamable-http",
+            "url": "https://mcp.daisycon.com/publisher/mcp"
+        },
+        {
+            "type": "streamable-http",
+            "url": "https://mcp.daisycon.com/campaigns/mcp"
+        }
+    ],
+    "_meta": {
+        "com.daisycon.mcp/servers": [
+            {
+                "slug": "advertiser",
+                "name": "daisycon-advertiser",
+                "title": "Daisycon - Advertiser (MCP server)",
+                "url": "https://mcp.daisycon.com/advertiser/mcp"
+            },
+            {
+                "slug": "publisher",
+                "name": "daisycon-publisher",
+                "title": "Daisycon - Publisher (MCP server)",
+                "url": "https://mcp.daisycon.com/publisher/mcp"
+            },
+            {
+                "slug": "campaigns",
+                "name": "daisycon-campaigns",
+                "title": "Daisycon - Campaigns (MCP server)",
+                "url": "https://mcp.daisycon.com/campaigns/mcp"
+            }
+        ]
+    }
+}

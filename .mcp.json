@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "daisycon-advertiser": {
+            "type": "http",
+            "url": "https://mcp.daisycon.com/advertiser/mcp"
+        },
+        "daisycon-publisher": {
+            "type": "http",
+            "url": "https://mcp.daisycon.com/publisher/mcp"
+        },
+        "daisycon-campaigns": {
+            "type": "http",
+            "url": "https://mcp.daisycon.com/campaigns/mcp"
+        }
+    }
+}
