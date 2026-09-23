@@ -3,7 +3,7 @@
     "name": "com.daisycon.mcp/daisycon",
     "title": "Daisycon (MCP server)",
     "description": "Search Daisycon affiliate programs, manage campaigns and leads, and track earnings and statistics.",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "websiteUrl": "https://mcp.daisycon.com",
     "remotes": [
         {
