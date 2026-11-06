@@ -7,11 +7,11 @@ Official Model Context Protocol (MCP) servers for the **Daisycon** affiliate net
 
 ## Servers
 
-| Server                                           | Endpoint                                  | Auth          | Summary                                                              |
-| ------------------------------------------------ | ----------------------------------------- | ------------- | -------------------------------------------------------------------- |
-| [Campaigns](#campaigns-public-no-authentication) | `https://mcp.daisycon.com/campaigns/mcp`  | None (public) | Public Daisycon Campaign Search MCP - no authentication required.    |
-| [Advertiser](#advertiser-oauth)                  | `https://mcp.daisycon.com/advertiser/mcp` | OAuth         | Daisycon Advertiser MCP - programs, leads, financials, integrations. |
-| [Publisher](#publisher-oauth)                    | `https://mcp.daisycon.com/publisher/mcp`  | OAuth         | Daisycon Publisher MCP - campaigns, media, statistics, transactions. |
+| Server | Endpoint | Auth | Summary |
+|---|---|---|---|
+| [Campaigns](#campaigns-public-no-authentication) | `https://mcp.daisycon.com/campaigns/mcp` | None (public) | Public Daisycon Campaign Search MCP - no authentication required. |
+| [Advertiser](#advertiser-oauth) | `https://mcp.daisycon.com/advertiser/mcp` | OAuth | Daisycon Advertiser MCP - programs, leads, financials, integrations. |
+| [Publisher](#publisher-oauth) | `https://mcp.daisycon.com/publisher/mcp` | OAuth | Daisycon Publisher MCP - campaigns, media, statistics, transactions. |
 
 Every server shares: Streamable HTTP transport, JSON-RPC 2.0, primary protocol version `2026-07-28` with legacy support for `2025-11-25`, `2025-06-18`, `2025-03-26`, `2024-11-05` (negotiated via `initialize`).
 
@@ -19,9 +19,11 @@ Every server shares: Streamable HTTP transport, JSON-RPC 2.0, primary protocol v
 
 - **Endpoint**: `POST https://mcp.daisycon.com/campaigns/mcp`
 - **Scope**: `campaigns.read`
+- **Custom tools**: `list`, plus the full Campaigns API surface, auto-exposed from its OpenAPI specification. Live catalogue: [`/campaigns/llms.txt`](https://mcp.daisycon.com/campaigns/llms.txt) or `tools/list`.
+- **Authorization**: None (public, read-only, no sign-in required).
 
-| Tool                   | Scope            | Description                                                                           |
-| ---------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+| Tool | Scope | Description |
+|---|---|---|
 | `getAllPublicPrograms` | `campaigns.read` | See [`/campaigns/llms.txt`](https://mcp.daisycon.com/campaigns/llms.txt) for details. |
 
 **Claude Code & Claude Desktop**
